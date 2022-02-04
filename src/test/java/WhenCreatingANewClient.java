@@ -10,6 +10,9 @@ import java.util.Map;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.not;
 public class WhenCreatingANewClient {
+
+    // Note:- correct one  run this command in terminal before executing this test.  mvn spring-boot:run
+    // Note:- just for data run this command in terminal before executing this test.  mvn spring-boot:run -Ddata.source=IEX
     @Before
     public void setupBaseUrl(){
         RestAssured.baseURI ="http://localhost:9000/api";
